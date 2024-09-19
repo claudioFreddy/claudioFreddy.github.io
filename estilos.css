@@ -1,0 +1,215 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+   
+}
+
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 8%;
+    font-weight: bold;    
+}
+
+h6{
+    color:#FDFDFD;
+    font-size: 45px;    
+}
+
+p{
+    color: #FDFDFD;
+    font-size: 30px;
+}
+
+ul li{
+    display:inline-block;
+    padding: 0px;
+}
+
+a{
+    color:blue;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+a:hover{
+    color:blueviolet;
+}
+
+.background-image{
+    background-image: url('imagenes/img08.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;     
+    height: 80vh;
+    align-items: center;
+    justify-content: center;  
+}
+
+.text-container{
+    position: absolute; /* Posiciona el texto de forma absoluta dentro del contenedor */
+    top: 50%; /* Mueve el texto al 50% desde la parte superior */
+    left: 50%; /* Mueve el texto al 50% desde la izquierda */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: white; /* Color del texto */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin:auto;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(0,0,0, 0.2);
+    overflow:hidden;
+    margin: 20px;
+    text-align: center;    
+    transition: all 0.25s;
+
+}
+
+.container .card:hover{
+    transform:translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+} 
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.container-mision {
+    display: flex; /* Usamos flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    max-width: 800px; /* Ajusta el ancho máximo de la caja contenedora */
+    margin: 0 auto; /* Centra la caja en la página */
+    padding: 20px; /* Añade espaciado alrededor del contenido */
+    margin-top: 40px;
+}
+
+.image {
+    flex: 1; /* La imagen ocupa una fracción flexible del espacio */
+    margin-right: 20px; /* Añade espacio entre la imagen y el texto */
+}
+
+.image img {
+    max-width: 100%; /* La imagen no supera el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio extra por defecto debajo de la imagen */
+}
+
+.content {
+    flex: 2; /* El texto ocupa dos fracciones flexibles del espacio */
+}
+
+h2 {
+    font-size: 1.5em; /* Tamaño del título */
+    margin-bottom: 10px; /* Espaciado inferior del título */
+    text-align: center;
+}
+
+p {
+    line-height: 1.6; /* Espaciado entre líneas del párrafo */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info {
+    flex: 1;
+}
+
+.contact-form {
+    flex: 1;
+    text-align: right;
+    margin-top: -140px;
+}
+
+.contact-form form {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff4500;
+}
