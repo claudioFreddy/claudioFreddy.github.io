@@ -1,11 +1,18 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST['nombre'];
-    $email = $_POST['email'];
-    $mensaje = $_POST['mensaje'];
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
 
-    // Aquí puedes agregar la lógica para enviar el correo o guardar los datos
-    mail("tu_email@ejemplo.com", "Nuevo mensaje de contacto", $mensaje, "From:" . $email);
-    echo "Mensaje enviado!";
+    $to = "cvielma67@gmail.com"; // Cambia esto al correo del destinatario
+    $subject = "Nuevo mensaje de contacto de " . $name;
+    $body = "Nombre: $name\nEmail: $email\n\nMensaje:\n$message";
+    $headers = "From: $email";
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Mensaje enviado correctamente.";
+    } else {
+        echo "Error al enviar el mensaje.";
+    }
 }
 ?>
