@@ -93,6 +93,19 @@
         </div>    
     </div>    
 </footer>
+<script>
 
+    const $form = document.querySelector('#form')
+    const $buttonMailto = document.querySelector('#trucazo') // Asegúrate de que el ID coincide con el HTML
+
+    $form.addEventListener('submit', handleSubmit)
+
+    function handleSubmit(event) {
+        event.preventDefault()
+        const form = new FormData($form) // Cambié 'this' por '$form'
+        $buttonMailto.setAttribute('href', `mailto:cvielma67@gmail.com?subject=nombre ${form.get('name')} correo ${form.get('email')}&body=${form.get('message')}`)
+        $buttonMailto.click()
+    }
+</script>
 </body>
 </html>
