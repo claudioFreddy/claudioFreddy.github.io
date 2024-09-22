@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "cvielma67@gmail.com"; // Cambia esto al correo del destinatario
     $subject = "Nuevo mensaje de contacto de " . $name;
     $body = "Nombre: $name\nEmail: $email\n\nMensaje:\n$message";
-    $headers = "From: $email";
+    $headers = "From: virginiadel1947@gmail.com";
 
     if (mail($to, $subject, $body, $headers)) {
         echo "Mensaje enviado correctamente.";
