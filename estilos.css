@@ -176,7 +176,9 @@ footer {
 .footer-info {
     flex: 1;
 }
-
+#trucazo {
+    text-align: 0;
+}
 .contact-form {
     flex: 1;
     text-align: right;
