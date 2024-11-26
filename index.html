@@ -79,6 +79,7 @@
         </div>
         <div class="contact-form">
             <form action="https://formsubmit.io/cvielma67@gmail.com" method="POST">
+                {% csrf_token %}
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
 
