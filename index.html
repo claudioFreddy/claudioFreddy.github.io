@@ -79,7 +79,6 @@
         </div>
         <div class="contact-form">
             <form action="https://formsubmit.io/cvielma67@gmail.com" method="POST">
-                {% csrf_token %}
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -94,7 +93,7 @@
         </div>    
     </div>    
 </footer>
-<script>
+<!-- <script>
 
     const $form = document.querySelector('#form')
     const $buttonMailto = document.querySelector('#trucazo') // Asegúrate de que el ID coincide con el HTML
@@ -107,6 +106,6 @@
         $buttonMailto.setAttribute('href', `mailto:cvielma67@gmail.com?subject=nombre ${form.get('name')} correo ${form.get('email')}&body=${form.get('message')}`)
         $buttonMailto.click()
     }
-</script>
+</script>  -->
 </body>
 </html>
