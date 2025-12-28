@@ -48,6 +48,12 @@ a:visited {
 a:focus {
     outline: none;
     color: #0b5ed7;
+
+/* --- FORZAR ESTILO DE ENLACES --- */
+a, a:visited, a:hover, a:active, a:focus {
+    color: #1a73e8 !important;
+    text-decoration: none !important;
+    font-weight: 500;
 }
 
 
