@@ -30,4 +30,24 @@ a {
     text-decoration: none;
 }
 
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #0b5ed7;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #1a73e8;
+}
+
+a:focus {
+    outline: none;
+    color: #0b5ed7;
+}
+
 
