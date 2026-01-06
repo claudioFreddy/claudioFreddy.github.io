@@ -2,61 +2,68 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Claudio Vielma | Desarrollador ASP.NET Core</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Claudio Vielma - Portafolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+        }
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
     <h1>Claudio Vielma</h1>
-    <p>Desarrollador ASP.NET Core</p>
-    <small>En constante aprendizaje y mejora continua</small>
+    <p>Desarrollador Backend ASP.NET Core</p>
 </header>
 
 <section>
-    <h2>Sobre mí</h2>
-    <p>
-        Desarrollador backend especializado en ASP.NET Core MVC, con experiencia en creación de aplicaciones web con autenticación, roles, CRUD y control de acceso.
-	Me apasiona comprender cómo funcionan los sistemas por dentro y construir soluciones sólidas y mantenibles.
-	Implementación de autenticación con ASP.NET Identity.
-	Actualmente en proceso de incorporación de control de acceso por roles.
-    </p>
-</section>
-
-<section>
-    <h2>Proyectos</h2>
-
-    <div class="project">
-        <h3>Sistema de Reservas</h3>
-        <p>Aplicación ASP.NET Core MVC con autenticación </p>
-        <a href="https://github.com/ClaudioFreddy/SistemaDeReservas" target="_blank">Ver código</a>
-    </div>
-
-    
-   <div class="project">
-        <h3>Foro con Autenticación</h3>
-        <p>Foro desarrollado en ASP.NET Core con Identity.</p>        
-	<a href="https://github.com/claudioFreddy/ForoAutenticacion" target="_blank">Ver código</a>
-   </div>
-
-
-    <div class="project">
-        <h3>Blog Personal</h3>
-        <p>CRUD de publicaciones con ASP.NET Identity.</p>
-        <a href="https://github.com/ClaudioFreddy/BlogPersonal" target="_blank">Ver código</a>
-    </div>
-
-    <div class="project">
-        <h3>Administrador de Tareas</h3>
-        <p>Gestión de tareas completadas y pendientes.</p>
-        <a href="https://github.com/ClaudioFreddy/AdministradorDeTareas" target="_blank">Ver código</a>
+    <div class="card">
+        <h2>Sistema de Reservas</h2>
+        <p>
+            Sistema desarrollado en ASP.NET Core MVC con Identity y Roles.
+        </p>
+        <ul>
+            <li>Registro y login de usuarios</li>
+            <li>Roles: Admin y Usuario</li>
+            <li>Filtrado de reservas por usuario</li>
+        </ul>
+        <a class="btn" href="https://github.com/claudioFreddy/SistemaDeReservas" target="_blank">
+            Ver código en GitHub
+        </a>
     </div>
 </section>
-
-<footer>
-    <p>Contacto: cvielma67@gmail.com</p>
-</footer>
 
 </body>
 </html>
+
+
+
+
 
